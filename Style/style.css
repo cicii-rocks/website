@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #E7E6E3;
+    height: 100vh;
+    overflow: auto;
+}
+
+.cabecalho {
+    background-color: #73ADA4;
+    padding: 2% 25% 2% 2%;
+    margin-bottom: 58px;
+    position: fixed;
+    width: 100%;
+    align-items: left;
+    display: block; 
+}
+
+/*GAPS*/
+.cabecalho_menu {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    padding: 0 0%;
+}
+
+/*LINKS*/
+.cabecalho_menu_link {
+    font-family: "Josefin Slab", serif;
+    font-size: 1.5rem;
+    font-weight: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+/*LINKS CABEÇALHO*/
+.cabecalho_menu_link:hover{
+    color: #E7E6E3; 
+}
+.about{
+    display: none;
+}
+.dropdown_menu{
+    display: flex;
+    gap: 25px;
+}
+/*HOME*/
+.container_home{
+   display: flex;
+   height: 495x;
+   justify-content: center;
+   justify-items: center; 
+   background-color: #D89FBC;
+   padding: 12% 2% 2% 8%;
+   gap: 80px;
+}
+
+/*HOME CONTEUDO*/
+.container_conteudo_home{
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+.container_home_titulo{
+    font-size: 2.625rem;
+    font-family:'Josefin Slab', serif;
+    font-weight: 300;
+    margin-bottom: 0px;
+    color: white;
+    line-height: 105%;
+}
+.container_home_texto{
+    font-family:'Zain', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+    justify-content: center;
+}
+
+/*LINKS DO HOME*/
+.container_home_links{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.container_home_links_visual{
+    width: 45.528455285%;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #c27299;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #c27299;
+    text-decoration: none;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    fill: #c27299;
+    margin: 0px 16px 0px 0px;
+}
+
+/*HOVER DOS LINKS*/
+.container_home_links_visual:hover{
+    color: #E7E6E3; 
+    fill: white;
+    border: 2px solid white;
+    background-color: #c27299;
+}
+
+/*EXPERIÊNCIA*/
+.container_experiencia{
+   justify-content: space-between;
+   align-content: center;
+   padding: 2% 12%;
+   margin-top: 58px;
+}
+.container_experiencia_conteudo{
+    align-self: center;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #73ADA4;
+    border-radius: 16px;
+}
+.experiencia_titulo{
+    font-family:'Josefin Slab', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 105%;
+}
+.datas_experiencia{
+    font-family:'Josefin Slab', serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: white;
+    justify-content: center;
+}
+.descricao_experiencia{
+    font-family:'Zain', sans-serif;
+    font-weight: 100;
+    font-size: 1.125rem;
+    color: white;
+    justify-content: center;
+    line-height: 105%;
+}
+
+/*CARDS HABILIDADES*/
+.container_habilidades{
+    display: flex;
+    padding: 1% 12% 2% 12%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 0;
+}
+.container_conteudo_habilidades{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+    align-items: left;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #73ADA4;
+    padding: 2% 8% 2% 2%;
+}
+.habilidades_titulos{
+    font-family:'Josefin Slab', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #D89FBC;
+    padding: 2% 0%;
+    margin-bottom: 12px;
+    line-height: 120%;
+}
+.habilidades_descricao{
+    font-family:'Zain', sans-serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: #73ADA4;
+    justify-content: center;
+    line-height: 125%;
+}
+
+/*PROJETOS*/
+.container_projetos_titulo{
+    font-family:'Josefin Slab', sans-serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: white;
+    line-height: 135%;
+    background-color: #D89FBC;
+    display: flex;
+    padding: 1% 12%;
+    margin-top: 0px;
+    align-self: stretch;
+}
+.container_projetos{
+    display: flex;
+    padding: 4% 12%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 0;
+    flex-direction: column;
+    align-self: stretch;
+}
+.container_projetos_conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 0;
+    align-self: stretch;
+}
+.projetos_box{
+    display: flex;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background: #73ADA4;
+    border-radius: 16px;
+    width: fit-content;
+}
+.projetos_box_box{
+    align-items: center;
+}
+
+.ilustracoes{
+    font-family:'Josefin Slab', serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+    color: white;
+    justify-content: center;
+    line-height: 125%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+/*CONTATO*/
+.container_contato{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #D89FBC;
+   padding: 4% 12% 4% 12%;
+   margin: 0;
+   flex-direction: column;
+   gap: 0;
+}
+
+.chamado{
+    font-size: 3.125rem;
+    font-family:'Josefin Slab', sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 120%;
+}
+.entre_contato{
+    font-size: 1.5rem;
+    font-family:'Zain', sans-serif;
+    font-weight: 300;
+    color: white;
+    line-height: 120%;
+}
+.contatos{
+    font-size: 1rem;
+    font-family:'Zain', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*RODAPÉ*/
+.rodape{
+    font-family:'Zain', sans-serif;
+    font-weight: 100;
+    font-size: 1.125rem;
+    color: white;
+    justify-content: center;
+    line-height: 105%;
+    background-color:#73ADA4;
+    padding: 2% 0%;
+    text-align: center;
+    margin-top: 48px;
+}
+/*Estilização da responsividade em 480px*/
+@media(max-width:480px){
+    .facet_sidebar{
+        display: none;
+    }
+
+    .cabecalho{
+        position: fixed;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 2%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+        gap: 80px;
+    }
+    .cabecalho_menu_link{
+        font-size: 1rem;
+        display: inline-block;
+
+    }
+    .about{
+        font-family: "Josefin Slab", serif;
+        font-size: 1rem;
+        font-weight: 100px;
+        color: white;
+        text-decoration: none;
+        display: contents;
+    }
+
+    /*dropdown menu*/
+    .dropdown_menu{
+        position: absolute;
+        box-shadow: 0 0 4px 0 black;
+        background-color: #D89FBC;
+        display: none;
+    }
+    .dropdown_menu a{
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Josefin Slab', serif ;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        color:#73ADA4
+    }
+    .dropdown_menu a:hover{
+        background-color: #c27299;
+    }
+    .item_about:hover .dropdown_menu{
+        display: block;
+    }
+
+    .imagem_perfil{
+        width: 60%;
+        margin-left: 10%;
+    }
+    .container_home{
+        padding-top: 20%;
+        align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        width:auto;
+        gap: 45px;
+        align-content: center;
+        padding-left: 0;
+    }
+    .container_home_titulo{
+        font-size: 1.5rem;
+    }
+    .container_home_texto{
+        font-size: 1rem;
+    }
+    .container_home_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+    }
+    .container_home_links_visual{
+        font-size: 1rem;
+        margin: 0;
+        gap: 5%;
+        padding: 2%;
+        width: 100%;
+    }
+    .container_experiencia{
+        display: flex;
+        flex-direction: column;
+    }
+    .datas_experiencia{
+        font-size: 1rem;
+    }
+    .descricao_experiencia{
+        font-size: 0.8rem;
+    }
+    .experiencia_titulo{
+        font-size: 1.5rem;
+    }
+    .container_habilidades{
+        display: flex;
+        overflow-x: auto;
+    }
+    .container_projetos_titulo{
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    .container_projetos{
+        display: flex;
+        overflow-x: auto;
+    }
+    .chamado{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .entre_contato{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .contatos{
+        text-align: center;
+        font-size: 0.5rem;
+    }
+    .rodape{
+        font-size: 0.5rem;
+    }
+}
