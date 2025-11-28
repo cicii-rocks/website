@@ -434,12 +434,61 @@ body{
 }
 /*Estilização da responsividade até 768px*/
 @media(max-width:768px){
+    .facet_sidebar{
+        display: none;
+    }
+    .cabecalho{
+        position: fixed;
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        padding: 2%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+        gap: 70px;
+    }
+    .cabecalho_menu_link{
+        font-size: 1.5rem;
+        display: inline-block;
+
+    }
+    .about{
+        font-family: "Josefin Slab", serif;
+        font-size: 1.5rem;
+        font-weight: 100px;
+        color: white;
+        text-decoration: none;
+        display: contents;
+    }
     .cabecalho{
         padding-right: 30px;
     }
     .imagem_perfil{
         margin-left: 10%;
         width: 60%;
+    }
+    .dropdown_menu{
+        position: absolute;
+        box-shadow: 0 0 4px 0 black;
+        background-color: #D89FBC;
+        display: none;
+    }
+    .dropdown_menu a{
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Josefin Slab', serif ;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        color:#E7E6E3;
+    }
+    .dropdown_menu a:hover{
+        background-color:#c27299;
+    }
+    .item_about:hover .dropdown_menu{
+        display: block;
     }
    .container_home{
         padding-top: 20%;
@@ -477,6 +526,7 @@ body{
         text-align: center;
     }
 }
+/*Estilização da responsividade até 1200px*/
 @media(max-width:1200px){
     .dropdown_menu{
         padding-right: 30px;
