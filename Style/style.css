@@ -432,6 +432,7 @@ body{
         font-size: 0.5rem;
     }
 }
+/*Estilização da responsividade até 768px*/
 @media(max-width:768px){
     .cabecalho{
         padding-right: 30px;
@@ -449,6 +450,20 @@ body{
         gap: 45px;
         align-content: center;
         padding-left: 0;
+    }
+    .container_home_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+    }
+    .container_home_links_visual{
+        font-size: 1rem;
+        margin: 0;
+        gap: 5%;
+        padding: 2%;
+        width: 100%;
     }
     .container_habilidades{
         display: flex;
